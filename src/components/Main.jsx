@@ -1,8 +1,11 @@
 import Article from "./Articles"
 import data from "./Data"
 import data2 from "./Data2"
+import { useHorizontalScroll } from "./useSideScroll"
+
 
 export default function Main() {
+    const scrollRef = useHorizontalScroll();
     console.log(data)
     let articleHTML = data.data.projects.map((project, index) => {
         return (
@@ -35,8 +38,8 @@ export default function Main() {
         )
     })
     return (
-        <section id="main">
-        <div className="items">
+    <section id="main" ref={scrollRef} >
+        <div className="items" style={{ whiteSpace: "nowrap" }}>
 
         <div className="item intro span-2">
             <h1>Noah Kenney Berlove</h1>
@@ -48,7 +51,7 @@ export default function Main() {
 
     </div>
 
-    <div className="items">
+    <div className="items" style={{ whiteSpace: "nowrap" }}>
          {articleHTML2}
         {/*<article className="item thumb span-3">
             <h2>Kingdom of the Wind</h2>
