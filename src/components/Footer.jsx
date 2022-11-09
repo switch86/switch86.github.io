@@ -19,14 +19,14 @@ export default function Footer() {
                 <li>&copy; Noah Berlove</li>
             </ul>
         </section>
-            <ul className="skills">
+            {/* <ul className="skills">
                 <li>JavaScript</li>
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>Node.Js</li>
                 <li>React</li>
                 <li>MongoDB</li>
-            </ul>
+            </ul> */}
         </section>
     </div>
 )
