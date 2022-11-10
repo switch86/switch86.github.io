@@ -100,7 +100,7 @@ input, select, textarea {
 		overflow-y: auto;
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		/* body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -109,7 +109,7 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-		}
+		} */
 
 		@media screen and (max-width: 1280px) {
 
@@ -403,6 +403,7 @@ input, select, textarea {
 			box-shadow: 0 0 0 10px #ffffff;
 			border: 1px gray solid;
 			border-radius: 8px;
+			position: relative;
 		}
 		#main .item a.icon {
 			color: white;
@@ -553,13 +554,13 @@ input, select, textarea {
 					transition-delay: 2s;
 				}
 
-		body.is-preload #main {
+		/* body.is-preload #main {
 			opacity: 0;
 		}
 
 			body.is-preload #main .item.thumb img {
 				opacity: 0;
-			}
+			} */
 			
 			@media screen and (max-width: 1680px) {
 				

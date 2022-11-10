@@ -3,6 +3,7 @@ import data from "./Data"
 import data2 from "./Data2"
 import { useHorizontalScroll } from "./useSideScroll"
 
+
 export default function Main() {
     const scrollRef = useHorizontalScroll();
     console.log(data)
